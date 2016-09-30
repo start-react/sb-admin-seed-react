@@ -14,8 +14,7 @@ import App from '../components/App';
 import home from './home';
 import contact from './contact';
 import login from './login';
-import table from './dashboard-pages/Tables';
-import button from './dashboard-pages/Buttons';
+import blank from './dashboard-pages/Blank';
 import register from './register';
 import content from './content';
 import error from './error';
@@ -28,9 +27,8 @@ export default {
   children: [
     home,
     contact,
+    blank,
     login,
-    table,
-    button,
     register,
 
     // place new routes before...
@@ -40,7 +38,7 @@ export default {
 
   async action({ next, render, context }) {
     const component = await next();
-    if (component === undefined) return component;
+    if (component === undefined) { return component; }
     return render(
       <App context={context}>{component}</App>
     );

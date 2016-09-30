@@ -17,7 +17,7 @@ export default {
 
   action({ render, context }) {
     return render(
-      <App context={context} login={'login'}>
+      <App context={context} login={true}>
         <Login />
       </App>,
     );

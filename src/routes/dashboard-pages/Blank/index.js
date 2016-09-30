@@ -8,14 +8,14 @@
  */
 
 import React from 'react';
-import Button from './Button';
+import Blank from './Blank';
 
 export default {
 
-  path: '/button',
+  path: '/blank',
 
   action() {
-    return <Button />;
+    return <Blank />;
   },
 
 };
