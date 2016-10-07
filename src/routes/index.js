@@ -12,11 +12,8 @@ import App from '../components/App';
 
 // Child routes
 import home from './home';
-import contact from './contact';
 import login from './login';
 import blank from './dashboardPages/blank';
-import register from './register';
-import content from './content';
 import error from './error';
 
 import Header from '../components/Header';
@@ -44,12 +41,9 @@ export default [
   // keep in mind, routes are evaluated in order
     children: [
       home,
-      contact,
-      register,
       blank,
 
       // place new routes before...
-      content,
       error,
     ],
 
